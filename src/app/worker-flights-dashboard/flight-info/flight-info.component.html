@@ -1,0 +1,26 @@
+<ul class="list-group list-group-flush cursor-default">
+    <li class="list-group-item">
+        <span class="font-weight-bold">
+            Plane Number:
+        </span>
+         {{ flight.plane }}
+    </li>
+    <li class="list-group-item">
+        <span class="font-weight-bold">
+            Duration: 
+        </span>
+        {{ durationString(flight.duration) }}
+    </li>
+    <li class="list-group-item">
+        <span class="font-weight-bold">
+            Origin Gate: 
+        </span>
+        {{ flight.from_gate }}
+    </li>
+    <li class="list-group-item">
+        <span class="font-weight-bold">
+            Destination Gate: 
+        </span>
+        {{ flight.to_gate }}
+    </li>
+</ul>

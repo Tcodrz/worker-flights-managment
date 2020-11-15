@@ -1,0 +1,11 @@
+
+<h2>Workers</h2>
+
+<ul class="list-group list-group-flush">
+    <li *ngFor="let worker of workerList" 
+        class="list-group-item border-0 "
+        [ngClass]="worker.isSelected() ? 'font-weight-bold cursor-default': 'pointer'" 
+        (click)="onSelectWorker(worker)">
+        {{ worker.getName() }}
+    </li>
+</ul>
